@@ -1,0 +1,2 @@
+BKG viola scuro		#0d001a
+Lilla 			#9871D0
