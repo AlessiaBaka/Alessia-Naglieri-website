@@ -131,20 +131,29 @@ a:link {
 	position: fixed;
 	left: 0px;
 }
-.arrow1{
-	opacity: 0.8;
-	position: fixed;
-	top: 40%;
-	transform: translateY(-50%);
-}
-.arrow2{ /*NOT WORKING - FIX IT */
-	opacity: 0.8;
-	position: fixed;
-	top: 40%;
-	left:100%;
-	transform: translateY(-50%);
 
+.arrow_wrapper_left{
+    top: 50%;
+    left: 1%;
+    position: fixed;
+    z-index: 1;
 }
+
+.arrow_wrapper_right{
+    top: 50%;
+    right: 1%;
+    position: fixed;
+    z-index: 1;
+}
+
+.arrow_left {
+	transform: rotate(270deg);
+}
+
+.arrow_right {
+	transform: rotate(90deg);
+}
+
 .buttonMenu{
 	margin-left: -2%;
 	margin-top: -1%;
