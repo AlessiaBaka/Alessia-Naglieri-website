@@ -41,20 +41,12 @@ function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
-
-//custom code
-$(document).ready(function(e) {
-    $(selector).click(function(e) {
-		$(oggettoSuCuiAgire).hide
-	});
-});
-
 </script>
 </head>
 <body onLoad="MM_preloadImages('../materiale/Rollover/editoria2.png','../materiale/Rollover/spot4.png','../materiale/Rollover/info2.png','../materiale/Rollover/generativo2.png')">
      <!--- <a style="position: absolute; width: 57px; height: 49px; left: 547px; top: 129px;" href="index.html">Chi sono</a><br>
       </p>
-</div>    --->
+</div>    -->
 <div class="gridContainer clearfix">
   <div id="header">
     <nav>
@@ -63,7 +55,7 @@ $(document).ready(function(e) {
         <li><a href="myid.html">Chi Sono</a></li>
         <li><a href="longpage.html">Portfolio</a></li>
         <li><a href="contatti.html">Contatti</a></li>
-	</ul>
+  </ul>
     </ul>
     
     <ul class="menu">
@@ -78,25 +70,36 @@ $(document).ready(function(e) {
 
 <div id="container">
   <div id="box_long">
+
 <!-- ARROWS -->
-<div class="arrow1">
-	<img alt="arrow_LEFT" src="../materiale/arrow_v3_L-09.png" width="60px">
-</div>
-<!-- NOT WORKING - FIX IT -->
-<div class="arrow2">
-	<img alt="arrow_RIGHT" src="../materiale/arrow_v3_R-10.png" width="60px">
+<div class="arrow_wrapper_left">  
+  <div class="arrow_left">    
+    <a href="scrimia.html">
+        <img src="../materiale/up_arrow.png" alt="arrow_RIGHT" height="50" width="50">
+    </a>
+  </div>
 </div>
 
-	<!--qui cominciano le immagini Rollover-->
+<div class="arrow_wrapper_right">  
+  <div class="arrow_right">
+    <a href="spot.html">
+      <img src="../materiale/up_arrow.png" alt="arrow_RIGHT" height="50" width="50">
+    </a>  
+  </div>
+</div>
+
+  <!--qui cominciano le immagini Rollover-->
         <div id="myWorks">
-          	<div align="center"><img src="materiale/Murakami_three_rgb.png"></div>
-          	  <div style="margin-top: 30px; margin-bottom: 30px; padding-left:6%"><mah>Romanzi Giapponesi</mah></div>
-          		<div class="chiWrapper">
-    			<div class="colright" style="margin-right:2%; margin-bottom:5%"><img src="materiale/libriJap.png"></div>
-	 			 <div class="coleft">
-	 			   <p>&nbsp;</p>
-	 			   <h1>Disegno Editoriale                   </h1>
-	 			   <p>&nbsp;</p>
+          
+            <div align="center"><img src="materiale/Murakami_three_rgb.png"></div>
+              <div style="margin-top: 30px; margin-bottom: 30px; padding-left:6%"><mah>Romanzi Giapponesi</mah></div>
+              <!-- NOT WORKING - FIX IT -->
+          <div class="box_ARROWS">
+                <div class="chiWrapper">
+              <div class="colright" style="margin-right:2%; margin-bottom:5%"><img src="materiale/libriJap.png">
+                        </div>
+               <div class="coleft"> <p>&nbsp;</p>
+                  <h1>Disegno Editoriale</h1>  <p>&nbsp;</p>
                    <p><strong>Collezione di romanzi di autori giapponesi contemporanei</strong></p>
                    <p>Il tema delle collezioni di libri, in questo caso romanzi, mi affascina moltissimo. Il progetto comprende uno studio di tre proposte che seguono una linea grafica  minimale e di impatto, ancora molto poco visibile nell' industria commerciale editoriale italiana, con il fine di attrarre lettori grazie alla sua peculiarità.</p>
                    <p>&nbsp;</p>
@@ -105,9 +108,9 @@ $(document).ready(function(e) {
                    <p>Questa collezione è stata pensata per un pubblico giovane, molto interessato alla letteratura giapponese, che è attento ai disegni più minimalisti.</p>
                    <div class="spazio"></div>
 
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </div>
 
        <!--    <div class="textarea" align="left"><textarea name="email" cols="40" title="Messaggio" dir="ltr" lang="it">Scrivi la tua mail</textarea><p></p><p><textarea name="Oggetto" cols="40" title="Messaggio" dir="ltr" lang="it">Scrivi qui il messaggio</textarea>
