@@ -73,7 +73,6 @@ a:link {
 	padding-top:25px;
 	height:0;
 	overflow:hidden;
-
 }
 .videoWrapper iframe {
 	position: absolute;
@@ -81,7 +80,6 @@ a:link {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index:1;
 }
 .videoTxt{
 	margin-top: 30px;
@@ -126,7 +124,7 @@ a:link {
 	margin: 0px;
 	margin-left: -2px;
 	margin-left: 0px;
-	height: 62px;
+	height: 61px;
 	width: 100%;
 	position: fixed;
 	left: 0px;
@@ -205,6 +203,7 @@ nav {
 	background-color: #dce6e6;
 	width: 100vw;
 	text-transform: uppercase;
+	z-index: 3;
 }
 nav ul.menu {
 	display:none; /* !important */
@@ -389,13 +388,11 @@ nav ul.menu {
 	display:block; /* !important */
 }
 #container {
-	margin-top:6px;
 	clear: both;
 	float: left;
 	margin-left: 0;
 	width: 100%;
-	background-image:url(../materiale/bkg.png);
-	
+	background-image:url(../materiale/bkg.png);	
 	display: block;
 }
 #box_long {

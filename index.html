@@ -16,25 +16,17 @@
 <!-- Load jQuery using the google CDN service. Let's hope Alphabet never goes bankrupt! ;) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-	
-	$(function () {
+  $(function () {
+    $(".navMenu").hide();
 
-		$(".navMenu").hide();
-
-		$(window).scroll(function () {
-
-			if($(this).scrollTop() > 300)
-			{
-				$(".navMenu").fadeIn("slow");
-			}	
-			else
-			{
-				$(".navMenu").fadeOut();
-			}
-
-		});
-	});
-
+    $(window).scroll(function () {
+      if($(this).scrollTop() > 300) {
+        $(".navMenu").fadeIn("slow");
+      } else {
+        $(".navMenu").fadeOut();
+      }
+    });
+  });
 </script>
 
 <script src="respond.min.js"></script>
@@ -74,9 +66,8 @@ function MM_swapImage() { //v3.0
 		</div>
 	</div>
 
-
+	<!-- Nav-bar on top with the different buttons -->
     <nav class="navMenu">
-    
     	<!-- Navbar smartphone layout -->
 	    <ul class="buttonMenu"><a href="#" target="_parent" class="active"><img src="materiale/favicon.png" height="60px" style="padding-left:20px; padding-top:5px;"></a>
 		    <ul>	
@@ -94,7 +85,8 @@ function MM_swapImage() { //v3.0
 	        <li><a href="contatti.html">Contatti</a></li>
 	    </ul>
     </nav>
-  </div>
+  
+
 </div>
 
 <div id="container">
