@@ -1,10 +1,7 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
-<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
-<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html class="">
-<!--<![endif]-->
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,9 +12,31 @@
 <link rel="icon" 
       type="image/png" 
 	  href="materiale/favicon.png" >      
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+
+<!-- Load jQuery using the google CDN service. Let's hope Alphabet never goes bankrupt! ;) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$(function () {
+
+		$(".navMenu").hide();
+
+		$(window).scroll(function () {
+
+			if($(this).scrollTop() > 300)
+			{
+				$(".navMenu").fadeIn("slow");
+			}	
+			else
+			{
+				$(".navMenu").fadeOut();
+			}
+
+		});
+	});
+
+</script>
+
 <script src="respond.min.js"></script>
 <script type="text/javascript">
 function MM_swapImgRestore() { //v3.0
@@ -50,24 +69,24 @@ function MM_swapImage() { //v3.0
 	<div style="background-image:none; background-color:#0d001a; height: 100vh; display: flex; align-items: center;" >
 		<div class="homeWrapper">
 			<div id="b">
-				<img src="materiale/Personal logo_color_whitetext__transp-08.png" class="img-responsive" alt="Entra nel sito">
+				<img src="materiale/Personal logo_color_whitetext__transp-08.png" class="" alt="Entra nel sito">
 			</div> 
 		</div>
 	</div>
 
 
-    <nav>
+    <nav class="navMenu">
     
-    	<!-- Navbar desktop layout -->
-	    <ul class="buttonMenu"><a href="#" target="_parent" class="active"><img src="materiale/favicon.png" height="60px" style="padding-left:20px; padding-top:5px"></a>
+    	<!-- Navbar smartphone layout -->
+	    <ul class="buttonMenu"><a href="#" target="_parent" class="active"><img src="materiale/favicon.png" height="60px" style="padding-left:20px; padding-top:5px;"></a>
 		    <ul>	
 		        <li><a href="myid.html">Chi Sono</a></li>
 		        <li><a href="index.html">Portfolio</a></li>
 		        <li><a href="contatti.html">Contatti</a></li>
 			</ul>
 	    </ul>
-    
-	    <!-- Navbar smartphone layout -->
+    	
+    	<!-- Navbar desktop layout -->
 	    <ul class="menu">
 	        <li><img alt="favicon" src="materiale/favicon.png" height="60px" style="padding-left:20px"></li>
 	        <li><a href="myid.html">Chi Sono</a></li>
@@ -101,7 +120,7 @@ function MM_swapImage() { //v3.0
        <!--    <div class="textarea" align="left"><textarea name="email" cols="40" title="Messaggio" dir="ltr" lang="it">Scrivi la tua mail</textarea><p></p><p><textarea name="Oggetto" cols="40" title="Messaggio" dir="ltr" lang="it">Scrivi qui il messaggio</textarea>
             </p>
             <p>&nbsp;</p>
-        </div>--->
+        </div> -->
     <div class="BkgWrapper">
 <p style="color:white; font-size:13px; text-align:right; padding-right:30px; margin-bottom:10px;">Creato da Alessia Naglieri ©</p></div>
 </div>

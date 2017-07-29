@@ -199,8 +199,11 @@ a:link {
 }
 /*MENU DESKTOP*/
 nav {
-	margin-left: 1px;
-	width: 550px;
+	opacity: 0.9;
+	position: fixed;
+	top: 0;
+	background-color: #dce6e6;
+	width: 100vw;
 	text-transform: uppercase;
 }
 nav ul.menu {
