@@ -720,14 +720,13 @@ textarea{
 	border-radius: 2px;
 	background-image: url(../materiale/form_bkg.png);
 }
-.BkgWrapper{
-	z-index:3;
+.footer{
 	display:block;
-	background-image: url(../materiale/immaginedecorazione2.png);
-	position:fixed;
-	left:0px;
-	bottom:0px;
-	width:100%;
-	height:35px;
-}
-}
+	text-transform: uppercase;
+	font-size: 11px !important;
+	text-align: right;
+	padding-right: 47px;
+	padding-bottom: 10px;
+
+}}
+
