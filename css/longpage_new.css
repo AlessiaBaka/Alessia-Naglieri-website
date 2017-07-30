@@ -13,8 +13,7 @@ img, object, embed, video {
 body{
 	font-family: 'Raleway', sans-serif;
 	letter-spacing:0.1em;
-	background-image:url(../materiale/bkg.png);
-	background-repeat:repeat;
+	background-color: #DCE6E7;
 	margin: 0;
     padding: 0;
     border: 0;
@@ -39,10 +38,6 @@ p{
 #b{
 	padding-left:30%;
 	padding-right:30%;
-}
-#piuma{
-	height:200px;
-	padding-top:2%;
 }
 mah{
 	margin-top: 100px;
@@ -117,7 +112,7 @@ a:link {
 	margin-top:65px;
 }
 #header{
-	background-image: url(../materiale/bkg.png);
+	background-color: #DCE6E7;
 	opacity: 0.9;
 	z-index:3;
 	margin: 0px;
@@ -365,9 +360,6 @@ textarea{
 
 /* Layout mobile: 480 px e inferiori. */
 @media only screen and (min-width: 320px) {
-#piuma{
-	height:330px;
-}
 .text{
 	font-size: 20px;
 }
@@ -405,38 +397,37 @@ nav ul.menu {
 	float: none;
 }
 #Image1{
+	max-width:100%;
 	margin: 0px;
 }
 #Image2{
-	margin: 0px;
-}
+	max-width:100%;
+	margin: 0px;}
 #Image3{
-	margin: 0px;
-}
+	max-width:100%;
+	margin: 0px;}
 #Image4{
-	margin: 0px;
-}
+	max-width:100%;
+	margin: 0px;}
 #Image5 {
-	margin: 0px;
-}
+	max-width:100%;
+	margin: 0px;}
 #Image6 {
-	margin: 0px;
-}
+	max-width:100%;
+	margin: 0px;}
 #Image7 {
-	margin: 0px;
-}
+	max-width:100%;
+	margin: 0px;}
 #Image8 {
+	max-width:100%;
 	margin: 0px;
 }
 }
+
 
 /* Layout tablet: da 481 px a 768 px. Eredita stili da: Layout mobile. */
 
 @media only screen and (min-width: 481px) {
-#piuma{
-	height:500px;
-}
-
 mah{
 	margin-top: 100px;
 	font-size: 30px;
@@ -491,17 +482,122 @@ nav ul.menu li a:hover {
 }
 .idImages{
 	float: right;
-	width:100%;
 }
 #Image1{
-	max-width:50%;
+	max-width:100%;
 	margin:0px;
 }
 #Image2{
-	max-width:50%;
+	max-width:100%;
 	margin:0px;
 }
 #Image3{
+	max-width:100%;
+	margin:0px;
+}
+#Image4 {
+	max-width:100%;
+	margin:0px;
+	
+}
+#Image5 {
+	max-width:100%;
+	margin:0px;
+}
+#Image6 {
+	max-width:100%;
+	margin:0px;
+}
+#Image7 {
+	max-width:100%;
+	margin:0px;
+}
+#Image8 {
+	max-width:100%;
+	margin:0px;
+}
+.comments {
+	width: 80%;
+	float: left;
+	padding-left: 10%;
+	text-align: left;
+	margin-bottom: 90px;
+	height: 10px;
+}
+.submit {
+	width:70px;
+	float:right;
+	margin-right:45%;
+}
+}
+
+/* Layout desktop: da 769 px a 1232 px max.  Eredita stili da: Layout mobile e Layout tablet. */
+
+@media only screen and (min-width: 768px) {
+/*VIDEO*/
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 15%;
+	width: 71%;
+	height: 71%;
+	z-index:1;
+}
+.videoTxt {
+	margin-top: -15%;
+	margin-bottom: 30px;
+	padding-left:6%
+}
+#lista {
+	width: 72px;
+}
+.text {
+	font-size: 30px;
+}
+mah {
+	margin-top: 20px;
+	font-size: 30px;
+}
+h1 {
+	font-size: 18px;
+}
+p {
+	font-size: 15px;
+}
+
+.gridContainer {
+	width: 100%;
+	margin: 0;
+	padding-left:0;
+}
+#header{
+	height: 60px;
+	z-index:3;
+
+}
+#container {
+	width: 100%;
+}
+#box_long {
+	float: none;
+	display: block;
+	background-color: #DCE6E7;
+	height: auto; /* !important */
+	margin-bottom: 0px;
+}
+
+.idImages {
+	float: right;
+}
+#Image1 {
+	max-width:50%;
+	margin:0px;
+}
+#Image2 {
+	max-width:50%;
+	margin:0px;
+}
+#Image3 {
 	max-width:50%;
 	margin:0px;
 }
@@ -525,87 +621,6 @@ nav ul.menu li a:hover {
 #Image8 {
 	max-width:50%;
 	margin:0px;
-}
-.comments {
-	width: 80%;
-	float: left;
-	padding-left: 10%;
-	text-align: left;
-	margin-bottom: 90px;
-	height: 10px;
-}
-.submit {
-	width:70px;
-	float:right;
-	margin-right:45%;
-}
-}
-
-/* Layout desktop: da 769 px a 1232 px max.  Eredita stili da: Layout mobile e Layout tablet. */
-
-@media only screen and (min-width: 769px) {
-/*VIDEO*/
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 15%;
-	width: 71%;
-	height: 71%;
-	z-index:1;
-}
-.videoTxt{
-	margin-top: -15%;
-	margin-bottom: 30px;
-	padding-left:6%
-}
-#lista{
-	width: 72px;
-}
-.text{
-	font-size: 30px;
-}
-mah {
-	margin-top: 20px;
-	font-size: 30px;
-}
-h1 {
-	font-size: 18px;
-}
-p{
-	font-size: 15px;
-}
-
-#piuma{
-	height:650px;
-}
-.gridContainer {
-	width: 100%;
-	margin: 0;
-	padding-left:0;
-}
-#header{
-	height: 60px;
-	z-index:3;
-
-}
-#container {
-	clear: both;
-	width: 100%;
-	display: block;
-	margin-left: 0;
-	visibility: inherit;
-	height: auto;
-}
-#box_long {
-	float: none;
-	display: block;
-	background-color: #DCE6E7;
-	height: auto; /* !important */
-	margin-bottom: 0px;
-}
-
-.idImages{
-	float: right;
 }
 .comments {
 	width: 55%;
@@ -737,5 +752,12 @@ textarea{
 	padding-right: 47px;
 	padding-bottom: 10px;
 
-}}
+}
+.twoimg{
+	width:100%;
+	float:left;
+}
+
+}
+
 
