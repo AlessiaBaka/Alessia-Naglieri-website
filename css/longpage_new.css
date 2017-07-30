@@ -392,7 +392,7 @@ nav ul.menu {
 	float: left;
 	margin-left: 0;
 	width: 100%;
-	background-image:url(../materiale/bkg.png);	
+	background-color: #dce6e6;
 	display: block;
 }
 #box_long {
@@ -494,29 +494,37 @@ nav ul.menu li a:hover {
 	width:100%;
 }
 #Image1{
+	max-width:50%;
 	margin:0px;
 }
 #Image2{
+	max-width:50%;
 	margin:0px;
 }
 #Image3{
+	max-width:50%;
 	margin:0px;
 }
 #Image4 {
+	max-width:50%;
 	margin:0px;
 	
 }
 #Image5 {
+	max-width:50%;
 	margin:0px;
 }
 #Image6 {
-	margin: 0px;
+	max-width:50%;
+	margin:0px;
 }
 #Image7 {
-	margin: 0px;
+	max-width:50%;
+	margin:0px;
 }
 #Image8 {
-	margin: 0px;
+	max-width:50%;
+	margin:0px;
 }
 .comments {
 	width: 80%;
