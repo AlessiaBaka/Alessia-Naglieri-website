@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html class="">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alessia Naglieri | Graphic Designer</title>
+<link href="../boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../css/longpage_new.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
+<link rel="icon" 
+      type="image/png" 
+	  href="materiale/favicon.png" >      
+
+<!-- Load jQuery using the google CDN service. Let's hope Alphabet never goes bankrupt! ;) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  
+	//Code to control the fade-in and fade-out of the navbar when reaching a certain scroll threshold
+	$(function () {
+	    $(".navMenu").hide();
+
+	    $(window).scroll(function () {
+	    	if($(this).scrollTop() > 300) {
+	        	$(".navMenu").fadeIn("slow");
+	      	} else {
+	        	$(".navMenu").fadeOut();
+	      	}
+	  	});
+	});
+
+	//Code to fade-in fade out the scrimia images
+	//Start looking for this function event to start when the document (index.html) is ready
+	$(document).ready(function() {
+		//When the cursor hover on any img element call the hover(function1, function2) function. The function1 is called when the mouse hover on the img, function 2 is called when the mouse is outside of the image
+		$("img").hover(
+			function() {
+				//The construct Switch takes the id of the hovered image and changes the src of said img element based on its id. This changes the image to the image with the overlay, the next one in the following function changes the image back to its original src when the mouse is out
+				switch(this.id) {
+					case "Image1":
+						$("#Image1").attr("src", "materiale/Rollover/tesi2.png");
+						break;
+					case "Image2":
+						$("#Image2").attr("src", "materiale/Rollover/editoria4.png");
+						break;
+					case "Image3":
+						$("#Image3").attr("src", "materiale/Rollover/spot4.png");
+						break;
+					case "Image4":
+						$("#Image4").attr("src", "materiale/Rollover/generativo2.png");
+						break;		
+				}
+			}, function() {				
+				switch(this.id) {
+					case "Image1":
+						$("#Image1").attr("src", "materiale/Rollover/tesi1.png");
+						break;
+					case "Image2":
+						$("#Image2").attr("src", "materiale/Rollover/editoria3.png");
+						break;
+					case "Image3":
+						$("#Image3").attr("src", "materiale/Rollover/spot3.png");
+						break;
+					case "Image4":
+						$("#Image4").attr("src", "materiale/Rollover/generativo1.png");
+						break;		
+				}
+		});
+	});
+</script>
+
+</head>
+
+
+<body>
+	     
+	<div style="background-image:none; background-color:#0d001a; height: 100vh; display: flex; align-items: center;" >
+		<div class="homeWrapper">
+			<div id="b">
+				<img src="materiale/Personal logo_color_whitetext__transp-08.png">
+			</div> 
+		</div>
+	</div>
+
+	<!-- Nav-bar on top with the different buttons -->
+    <nav class="navMenu">
+    	<!-- Navbar smartphone layout -->
+	    <ul class="buttonMenu"><a href="#" target="_parent" class="active"><img src="materiale/favicon.png" height="60px" style="padding-left:20px; padding-top:5px;"></a>
+		    <ul>	
+		        <li><a href="myid.html">Chi Sono</a></li>
+		        <li><a href="index.html#container">Portfolio</a></li>
+		        <li><a href="contatti.html">Contatti</a></li>
+		        <li id="liClassRight">
+	        		<a href="index.html#container">Ita</a>
+	        	</li>
+	        	<li id="liClassRight">
+	        		<a href="../index.html#container">Eng</a>
+	        	</li>
+			</ul>
+	    </ul>
+    	
+    	<!-- Navbar desktop layout -->
+	    <ul class="menu">
+	        <li><img alt="favicon" src="materiale/favicon.png" height="60px" style="padding-left:20px"></li>
+	        <li><a href="myid.html">Chi Sono</a></li>
+	        <li><a href="index.html#container">Portfolio</a></li>
+	        <li><a href="contatti.html">Contatti</a></li>
+	        <li id="liClassRight">
+	        	<a href="index.html#container">Ita</a>
+	        </li>
+	        <li id="liClassRight">
+	        	<a href="../index.html#container">Eng</a>
+	        </li>
+	    </ul>
+    </nav>
+  
+
+</div>
+
+<div id="container">
+  <div id="box_long">
+    <div align="center">
+	<!--qui cominciano le immagini Rollover-->
+        <div id="myWorks">
+          <p><div class="visibilyMob"><div class="spazio"></div></div></p>
+              <div><mah>Portfolio</mah></div>
+          <p>
+
+          	<a href="scrimia.html">	
+          		<img id="Image1" src="materiale/Rollover/tesi1.png">
+          	</a>
+          
+       		<a href="editoria.html">
+       			<img id="Image2" src="materiale/Rollover/editoria3.png">
+       		</a>
+
+            <a href="spot.html">
+            	<img id="Image3" src="materiale/Rollover/spot3.png">
+            </a>
+            
+            <a href="art_javascript.html">
+            	<img id="Image4" src="materiale/Rollover/generativo1.png">
+            </a>
+
+            
+            </div>
+          </div>
+  </div>
+
+       <!--    <div class="textarea" align="left"><textarea name="email" cols="40" title="Messaggio" dir="ltr" lang="it">Scrivi la tua mail</textarea><p></p><p><textarea name="Oggetto" cols="40" title="Messaggio" dir="ltr" lang="it">Scrivi qui il messaggio</textarea>
+            </p>
+            <p>&nbsp;</p>
+        </div> -->
+    <div class="BkgWrapper">
+<p style="color:white; font-size:13px; text-align:right; padding-right:30px; margin-bottom:10px;">Creato da Alessia Naglieri ©</p></div>
+</div>
+</body>
+</html>

@@ -539,6 +539,21 @@ nav ul.menu li a:hover {
 	height: 71%;
 	z-index:1;
 }
+
+#liClassRight {
+	float: right;
+}
+
+#it-flag-navbar {
+	max-width: 16px; 
+	max-height: 16px;	
+}
+
+#en-flag-navbar {
+	max-width: 16px; 
+	max-height: 16px;
+}
+
 .videoTxt{
 	margin-top: -15%;
 	margin-bottom: 30px;
