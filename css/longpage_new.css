@@ -633,14 +633,14 @@ input[type=submit] {
 .chiWrapper {
 	float: left;
 	width: 97%;
-	background-image: url(../materiale/bkg.png);
-	background-repeat: repeat;
 	font-family: Raleway, sans-serif;
 }
 .colright {
 	float: right; 
 	width: 50%;
 	margin-top: 0px;
+	margin-right: 2%; 
+	margin-bottom: 5%;
 }
 .coleft{
 	width: 40%;
