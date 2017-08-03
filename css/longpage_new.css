@@ -58,6 +58,15 @@ a:link {
 	width: 60%;
 	padding: 10px;
 }
+.footer{
+	display:block;
+	text-transform: uppercase;
+	font-size: 11px !important;
+	text-align: right;
+	padding-right: 3%;
+	padding-bottom: 10px;
+
+}
 .spazio{
 	height: 30px;
 	width: 100%;
@@ -422,6 +431,22 @@ nav ul.menu {
 	max-width:100%;
 	float:left;
 }
+.text_table{ /* 320 PIXEL */
+	display: none; 
+}
+
+.img_table {
+	display: none;
+}
+.portfolio_smartphone_viewport{
+	display: block;
+}
+.text_smartphones{
+	padding: 0 8% 4% 4%;
+}
+.img_smartphones{
+	padding: 0 4% 4% 4%;
+}
 }
 
 
@@ -528,6 +553,23 @@ nav ul.menu li a:hover {
 	float:right;
 	margin-right:45%;
 }
+.text_table{ /* 468 PIXEL */
+	display: none; 
+}
+
+.img_table {
+	display: none;
+}
+.portfolio_smartphone_viewport{
+	display: block;
+}
+.text_smartphones{
+	padding: 0 8% 4% 4%;
+}
+.img_smartphones{
+	padding: 0 4% 4% 4%;
+}
+
 }
 
 /* Layout desktop: da 769 px a 1232 px max.  Eredita stili da: Layout mobile e Layout tablet. */
@@ -742,16 +784,27 @@ textarea{
 	border-radius: 2px;
 	background-image: url(../materiale/form_bkg.png);
 }
-.footer{
-	display:block;
-	text-transform: uppercase;
-	font-size: 11px !important;
-	text-align: right;
-	padding-right: 47px;
-	padding-bottom: 10px;
 
-}
 .twoimg{
 	width:100%;
 }
+
+.text_table{ /* 768 PIXEL */
+	width: 30%;
+	padding-left: 4%; 
+	display: block;
+	float:left;
 }
+
+.img_table {
+	width: 60%;	
+	display: block;
+	float:right;
+}
+
+.portfolio_smartphone_viewport{
+	display: none;
+
+}
+}
+
