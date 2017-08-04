@@ -98,18 +98,6 @@ a:link {
 	width:100%;
 }
 /*DIVISIONE COLONNE*/
-.colright {
-	float: right;
-	margin-bottom:5%;
-	width: 100%;
-	margin-top: 0px;
-}
-.coleft{
-	width: 80%;
-	margin-right: 10%;
-	padding-right: 10%;
-	padding-left: 10%;
-}
 .contenentTxt{
 	width: 80%;
 	margin-right: 10%;
@@ -676,19 +664,6 @@ input[type=submit] {
 	float: left;
 	width: 97%;
 	font-family: Raleway, sans-serif;
-}
-.colright {
-	float: right; 
-	width: 50%;
-	margin-top: 0px;
-	margin-right: 2%; 
-	margin-bottom: 5%;
-}
-.coleft{
-	width: 40%;
-	margin-right: 0px;
-	padding-right: 3%;
-	padding-left: 6%;
 }
 .contenentTxt{
 	width: 90%; 
