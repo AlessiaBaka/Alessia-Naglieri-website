@@ -40,32 +40,52 @@
 				//The construct Switch takes the id of the hovered image and changes the src of said img element based on its id. This changes the image to the image with the overlay, the next one in the following function changes the image back to its original src when the mouse is out
 				switch(this.id) {
 					case "Image1":
-						$("#Image1").attr("src", "materiale/Rollover/tesi2.png");
+						$("#Image1").attr("src", "materiale/Rollover/tesi_rollover.jpg");
 						break;
 					case "Image2":
-						$("#Image2").attr("src", "materiale/Rollover/editoria4.png");
-						break;
+						$("#Image2").attr("src", "materiale/Rollover/TQM_rollover.jpg");
+						break;	
 					case "Image3":
-						$("#Image3").attr("src", "materiale/Rollover/spot4.png");
-						break;
+						$("#Image3").attr("src", "materiale/Rollover/stop_motion_rollover.jpg");
+						break;					
 					case "Image4":
-						$("#Image4").attr("src", "materiale/Rollover/generativo2.png");
-						break;		
+						$("#Image4").attr("src", "materiale/Rollover/editoria_rollover.jpg");
+						break;
+					case "Image5":
+						$("#Image5").attr("src", "materiale/Rollover/primo_tempo_rollover.jpg");
+						break;
+					case "Image6":
+						$("#Image6").attr("src", "materiale/Rollover/distopia_libri_rollover.jpg");
+						break;
+					case "Image7":
+						$("#Image7").attr("src", "materiale/Rollover/generativo_rollover.jpg");
+						break;
+	
 				}
 			}, function() {				
 				switch(this.id) {
 					case "Image1":
-						$("#Image1").attr("src", "materiale/Rollover/tesi1.png");
+						$("#Image1").attr("src", "materiale/Rollover/tesi.jpg");
 						break;
 					case "Image2":
-						$("#Image2").attr("src", "materiale/Rollover/editoria3.png");
-						break;
+						$("#Image2").attr("src", "materiale/Rollover/TQM.jpg");
+						break;	
 					case "Image3":
-						$("#Image3").attr("src", "materiale/Rollover/spot3.png");
+						$("#Image3").attr("src", "materiale/Rollover/stop_motion.jpg");
 						break;
 					case "Image4":
-						$("#Image4").attr("src", "materiale/Rollover/generativo1.png");
-						break;		
+						$("#Image4").attr("src", "materiale/Rollover/editoria.jpg");
+						break;
+					case "Image5":
+						$("#Image5").attr("src", "materiale/Rollover/primo_tempo.jpg");
+						break;
+					case "Image6":
+						$("#Image6").attr("src", "materiale/Rollover/distopia_libri.jpg");
+						break;
+					case "Image7":
+						$("#Image7").attr("src", "materiale/Rollover/generativo.jpg");
+						break;
+
 				}
 		});
 	});
@@ -79,7 +99,7 @@
 	<div style="background-image:none; background-color:#0d001a; height: 100vh; display: flex; align-items: center;" >
 		<div class="homeWrapper">
 			<div id="b">
-				<img src="materiale/Personal logo_color_whitetext__transp-08.png">
+				<img alt="AlessiaNaglieri" src="materiale/Personal logo_color_whitetext__transp-08.png">
 			</div> 
 		</div>
 	</div>
@@ -87,7 +107,7 @@
 	<!-- Nav-bar on top with the different buttons -->
     <nav class="navMenu">
     	<!-- Navbar smartphone layout -->
-	    <ul class="buttonMenu"><a href="#" target="_parent" class="active"><img src="materiale/favicon.png" height="60px" style="padding-left:20px; padding-top:5px;"></a>
+	    <ul class="buttonMenu"><a href="#" target="_parent" class="active"><img alt="favicon" src="materiale/favicon.png" height="60px" style="padding-left:20px; padding-top:5px;"></a>
 		    <ul>	
 		        <li><a href="myid.html">Chi Sono</a></li>
 		        <li><a href="index.html#container">Portfolio</a></li>
@@ -107,44 +127,63 @@
     </nav>
   
 
-</div>
 
 <div id="container">
-  <div id="box_long">
-    <div align="center">
-	<!--qui cominciano le immagini Rollover-->
-        <div id="myWorks">
-          <p><div class="visibilyMob"><div class="spazio"></div></div></p>
-              <div><mah>Portfolio</mah></div>
-          <p>
-
-          	<a href="scrimia.html">	
-          		<img id="Image1" src="materiale/Rollover/tesi1.png">
-          	</a>
-          
-       		<a href="editoria.html">
-       			<img id="Image2" src="materiale/Rollover/editoria3.png">
-       		</a>
-
-            <a href="spot.html">
-            	<img id="Image3" src="materiale/Rollover/spot3.png">
-            </a>
-            
-            <a href="art_javascript.html">
-            	<img id="Image4" src="materiale/Rollover/generativo1.png">
-            </a>
-
-            
-            </div>
-          </div>
-  </div>
-
+		
+        
+        <!-- padding sopra titolo portfolio -->
+		<p>
+            <div class="visibilyMob">
+               	<div class="spazio"></div>
+			</div>
+		</p>
+			
+		<div align="center">
+			<mah>Portfolio</mah>
+		</div>
+		<div id="myWorks">
+			<p>
+		
+        <!--qui cominciano le immagini Rollover-->
+              	
+                <div class="twoimg">
+                    <a href="scrimia.html">
+                    	<img alt="tesi" id="Image1" src="materiale/Rollover/tesi.jpg">
+					</a>
+                    <a href="tqm.html">                                    
+                    	<img alt="tqm" id="Image2" src="materiale/Rollover/TQM.jpg">
+                	</a>
+                </div>    
+                <div class="twoimg">              
+					<a href="spot.html">
+                    	<img alt="spot" id="Image3" src="materiale/Rollover/stop_motion.jpg">
+                    </a>
+                    <a href="editoria.html">            
+						<img alt="editoria" id="Image4" src="materiale/Rollover/editoria.jpg">
+                	</a>
+                </div>
+				<div class="twoimg">
+                	<a href="primotempo.html">
+                    	<img alt="primotempo" id="Image5" src="materiale/Rollover/primo_tempo.jpg">
+                    </a>
+                    <a href="distopia.html">
+						<img alt="distopia" id="Image6" src="materiale/Rollover/distopia_libri.jpg">
+					</a>
+                </div>
+				<div class="twoimg">
+                	<a href="art_javascript.html">
+                    	<img alt="art_java" id="Image7" src="materiale/Rollover/generativo.jpg">
+					</a>
+				</div>
+			</p>
+		</div>		
+	</div>
        <!--    <div class="textarea" align="left"><textarea name="email" cols="40" title="Messaggio" dir="ltr" lang="it">Scrivi la tua mail</textarea><p></p><p><textarea name="Oggetto" cols="40" title="Messaggio" dir="ltr" lang="it">Scrivi qui il messaggio</textarea>
             </p>
             <p>&nbsp;</p>
         </div> -->
     <div class="BkgWrapper">
 <p style="color:white; font-size:13px; text-align:right; padding-right:30px; margin-bottom:10px;">Creato da Alessia Naglieri ©</p></div>
-</div>
+
 </body>
 </html>

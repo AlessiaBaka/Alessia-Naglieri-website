@@ -13,8 +13,7 @@ img, object, embed, video {
 body{
 	font-family: 'Raleway', sans-serif;
 	letter-spacing:0.1em;
-	background-image:url(../materiale/bkg.png);
-	background-repeat:repeat;
+	background-color: #DCE6E7;
 	margin: 0;
     padding: 0;
     border: 0;
@@ -40,10 +39,6 @@ p{
 	padding-left:30%;
 	padding-right:30%;
 }
-#piuma{
-	height:200px;
-	padding-top:2%;
-}
 mah{
 	margin-top: 100px;
 	font-size: 20px;
@@ -63,8 +58,17 @@ a:link {
 	width: 60%;
 	padding: 10px;
 }
+.footer{
+	display:block;
+	text-transform: uppercase;
+	font-size: 11px !important;
+	text-align: right;
+	padding-right: 3%;
+	padding-bottom: 10px;
+
+}
 .spazio{
-	height: 100px;
+	height: 30px;
 	width: 100%;
 }
 .videoWrapper {
@@ -94,18 +98,6 @@ a:link {
 	width:100%;
 }
 /*DIVISIONE COLONNE*/
-.colright {
-	float: right;
-	margin-bottom:5%;
-	width: 100%;
-	margin-top: 0px;
-}
-.coleft{
-	width: 80%;
-	margin-right: 10%;
-	padding-right: 10%;
-	padding-left: 10%;
-}
 .contenentTxt{
 	width: 80%;
 	margin-right: 10%;
@@ -117,7 +109,7 @@ a:link {
 	margin-top:65px;
 }
 #header{
-	background-image: url(../materiale/bkg.png);
+	background-color: #DCE6E7;
 	opacity: 0.9;
 	z-index:3;
 	margin: 0px;
@@ -359,9 +351,6 @@ textarea{
 
 /* Layout mobile: 480 px e inferiori. */
 @media only screen and (min-width: 320px) {
-#piuma{
-	height:330px;
-}
 .text{
 	font-size: 20px;
 }
@@ -386,7 +375,7 @@ nav ul.menu {
 	float: left;
 	margin-left: 0;
 	width: 100%;
-	background-image:url(../materiale/bkg.png);	
+	background-color: #dce6e6;
 	display: block;
 }
 #box_long {
@@ -399,37 +388,58 @@ nav ul.menu {
 	float: none;
 }
 #Image1{
-	margin: 0px;
+	max-width:100%;
+	float:left;
 }
 #Image2{
-	margin: 0px;
+	max-width:100%;
+	float:left;
 }
 #Image3{
-	margin: 0px;
+	max-width:100%;
+	float:left;
 }
 #Image4{
-	margin: 0px;
+	max-width:100%;
+	float:left;
 }
 #Image5 {
-	margin: 0px;
+	max-width:100%;
+	float:left;
 }
 #Image6 {
-	margin: 0px;
+	max-width:100%;
+	float:left;
 }
 #Image7 {
-	margin: 0px;
+	max-width:100%;
+	float:left;
 }
 #Image8 {
-	margin: 0px;
+	max-width:100%;
+	float:left;
+}
+.text_table{ /* 320 PIXEL TEXT PORTFOLIO */
+	display: none; 
+}
+
+.img_table { /* 320 PIXEL IMG PORTFOLIO */
+	display: none;
+}
+.portfolio_smartphone_viewport{
+	display: block;
+}
+.text_smartphones{
+	padding: 0 8% 4% 4%;
+}
+.img_smartphones{
+	padding: 0 4% 4% 4%;
 }
 }
+
 
 /* Layout tablet: da 481 px a 768 px. Eredita stili da: Layout mobile. */
-
-@media only screen and (min-width: 630px) {
-#piuma{
-	height:500px;
-}
+@media only screen and (min-width: 481px) {
 
 mah{
 	margin-top: 100px;
@@ -485,32 +495,38 @@ nav ul.menu li a:hover {
 }
 .idImages{
 	float: right;
-	width:100%;
 }
 #Image1{
-	margin:30px;
+	max-width:100%;
+	float:left;
 }
 #Image2{
-	margin:30px;
+	max-width:100%;
+	float:left;
 }
 #Image3{
-	margin:30px;
+	max-width:100%;
+	float:left;
 }
 #Image4 {
-	margin:30px;
-	
+	max-width:100%;
+	float:left;	
 }
 #Image5 {
-	margin:30px;
+	max-width:100%;
+	float:left;
 }
 #Image6 {
-	margin: 30px;
+	max-width:100%;
+	float:left;
 }
 #Image7 {
-	margin: 30px;
+	max-width:100%;
+	float:left;
 }
 #Image8 {
-	margin: 30px;
+	max-width:100%;
+	float:left;
 }
 .comments {
 	width: 80%;
@@ -525,11 +541,28 @@ nav ul.menu li a:hover {
 	float:right;
 	margin-right:45%;
 }
+.text_table{ /* 468 PIXEL TEXT PORTFOLIO */
+	display: none; 
+}
+
+.img_table { /* 320 PIXEL IMAGES PORTFOLIO */
+	display: none;
+}
+.portfolio_smartphone_viewport{
+	display: block;
+}
+.text_smartphones{
+	padding: 0 8% 4% 4%;
+}
+.img_smartphones{
+	padding: 0 4% 4% 4%;
+}
+
 }
 
 /* Layout desktop: da 769 px a 1232 px max.  Eredita stili da: Layout mobile e Layout tablet. */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 /*VIDEO*/
 .videoWrapper iframe {
 	position: absolute;
@@ -539,14 +572,15 @@ nav ul.menu li a:hover {
 	height: 71%;
 	z-index:1;
 }
-.videoTxt{
+.videoTxt {
+	margin-top: -15%;
 	margin-bottom: 30px;
 	padding-left:6%
 }
-#lista{
+#lista {
 	width: 72px;
 }
-.text{
+.text {
 	font-size: 30px;
 }
 mah {
@@ -556,13 +590,10 @@ mah {
 h1 {
 	font-size: 18px;
 }
-p{
+p {
 	font-size: 15px;
 }
 
-#piuma{
-	height:650px;
-}
 .gridContainer {
 	width: 100%;
 	margin: 0;
@@ -574,12 +605,7 @@ p{
 
 }
 #container {
-	clear: both;
 	width: 100%;
-	display: block;
-	margin-left: 0;
-	visibility: inherit;
-	height: auto;
 }
 #box_long {
 	float: none;
@@ -589,8 +615,40 @@ p{
 	margin-bottom: 0px;
 }
 
-.idImages{
+.idImages {
 	float: right;
+}
+#Image1 {
+	max-width:50%;
+	float:left;
+}
+#Image2 {
+	max-width:50%;
+	float:left;
+}
+#Image3 {
+	max-width:50%;
+	float:left;
+}
+#Image4 {
+	max-width:50%;
+	float:left;	
+}
+#Image5 {
+	max-width:50%;
+	float:left;
+}
+#Image6 {
+	max-width:50%;
+	float:left;
+}
+#Image7 {
+	max-width:50%;
+	float:left;
+}
+#Image8 {
+	max-width:50%;
+	float:left;
 }
 .comments {
 	width: 55%;
@@ -605,20 +663,7 @@ input[type=submit] {
 .chiWrapper {
 	float: left;
 	width: 97%;
-	background-image: url(../materiale/bkg.png);
-	background-repeat: repeat;
 	font-family: Raleway, sans-serif;
-}
-.colright {
-	float: right; 
-	width: 50%;
-	margin-top: 0px;
-}
-.coleft{
-	width: 40%;
-	margin-right: 0px;
-	padding-right: 3%;
-	padding-left: 6%;
 }
 .contenentTxt{
 	width: 90%; 
@@ -714,14 +759,28 @@ textarea{
 	border-radius: 2px;
 	background-image: url(../materiale/form_bkg.png);
 }
-.BkgWrapper{
-	z-index:3;
-	display:block;
-	background-image: url(../materiale/immaginedecorazione2.png);
-	position:fixed;
-	left:0px;
-	bottom:0px;
+
+.twoimg{
 	width:100%;
-	height:35px;
+}
+
+.text_table{ /* DESKTOP TEXT PORTFOLIO */
+	width: 30%;
+	padding-left: 4%; 
+	display: block;
+	float:left;
+}
+
+.img_table { /* DESKTOP IMAGES PORTFOLIO */
+	width: 50%;	
+	padding-left: 4%; 
+	display: block;
+	float:left;
+}
+
+.portfolio_smartphone_viewport{ /* SMARTPHONES VIEW HIDED */
+	display: none;
+
 }
 }
+
