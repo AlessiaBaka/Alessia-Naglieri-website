@@ -426,7 +426,7 @@ nav ul.menu {
 
 /* Layout tablet: da 481 px a 768 px. Eredita stili da: Layout mobile. */
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 630px) {
 #piuma{
 	height:500px;
 }
