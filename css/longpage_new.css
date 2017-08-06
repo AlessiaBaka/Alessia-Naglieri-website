@@ -439,7 +439,7 @@ nav ul.menu {
 
 
 /* Layout tablet: da 481 px a 768 px. Eredita stili da: Layout mobile. */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 620px) {
 
 mah{
 	margin-top: 100px;
@@ -573,7 +573,6 @@ nav ul.menu li a:hover {
 	z-index:1;
 }
 .videoTxt {
-	margin-top: -15%;
 	margin-bottom: 30px;
 	padding-left:6%
 }
