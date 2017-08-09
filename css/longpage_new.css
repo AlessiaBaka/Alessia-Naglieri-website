@@ -90,9 +90,10 @@ a:link {
 	margin-bottom: 30px;
 	padding-left:6%
 }
-#lista{
+.lista{
 	width: 60px;
 	position: absolute;
+	padding-top: 7px;
 }
 .listWrapper{
 	width:100%;
@@ -576,7 +577,7 @@ nav ul.menu li a:hover {
 	margin-bottom: 30px;
 	padding-left:6%
 }
-#lista {
+.lista {
 	width: 72px;
 }
 .text {
