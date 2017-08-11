@@ -24,7 +24,7 @@
     $(".navMenu").hide();
 
     $(window).scroll(function () {
-      if($(this).scrollTop() > 120) {
+      if($(this).scrollTop() > 150) {
         $(".navMenu").fadeIn("slow");
       } else {
         $(".navMenu").fadeOut();
@@ -34,44 +34,25 @@
 </script>
 
 <script src="respond.min.js"></script>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
 </head>
-<body onLoad="MM_preloadImages('../materiale/Rollover/editoria2.png','../materiale/Rollover/spot4.png','../materiale/Rollover/info2.png','../materiale/Rollover/generativo2.png')">
-     
-  <!-- Nav-bar on top with the different buttons -->
-  <nav class="navMenu">
-    <!-- Navbar smartphone layout -->
-    <ul class="buttonMenu"><a href="#" target="_parent" class="active"><img src="materiale/favicon.png" height="60px" style="padding-left:20px; padding-top:5px;"></a>
-      <ul>  
-          <li><a href="myid.html">Chi Sono</a></li>
-          <li><a href="index.html#container">Portfolio</a></li>
-          <li><a href="contatti.html">Contatti</a></li>
-    </ul>
-    </ul>
+<body>
+  
+
+	<!-- Nav-bar on top with the different buttons -->
+	<nav class="navMenu">
+		<!-- Navbar smartphone layout -->
+		<ul class="buttonMenu">
+        	<a href="#" target="_parent" class="active">
+				<img alt="favicon" src="materiale/favicon.png" height="60px" style="padding-left:20px; padding-top:5px;">
+			</a>
+			<ul>  
+				<li><a href="myid.html">Chi Sono</a></li>
+				<li><a href="index.html#container">Portfolio</a></li>
+				<li><a href="contatti.html">Contatti</a></li>
+			</ul>
+		</ul>
     
-    <!-- Navbar desktop layout -->
     <ul class="menu">
         <li><img alt="favicon" src="materiale/favicon.png" height="60px" style="padding-left:20px"></li>
         <li><a href="myid.html">Chi Sono</a></li>
@@ -80,61 +61,95 @@ function MM_swapImage() { //v3.0
         <li style="float: right; margin-right: 2vw"><a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/AlexxKnows"></a></li>
         <li style="float: right;"><a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/alessia-naglieri-61a8a810a/"></a></li>
     </ul>
-  </nav>
+    </nav>
 
 <!-- commenting container to fix the margin top bug, that starts the portfolio's different items with a little bit of margin from the top -->
 <!--
 <div id="container">
 -->
-  <div id="box_long">
+<div id="box_long">
+    
+    <!-- Frecce per scorrere a destra e a sinistra nel portfolio-->
+    <div class="arrow_wrapper_left">  
+      <div class="arrow_left">    
+        <a href="distopia.html">
+            <img src="materiale/up_arrow.png" alt="arrow_RIGHT" height="35" width="35">
+        </a>
+      </div>
+    </div>
 
-<!-- Frecce per scorrere a destra e a sinistra nel portfolio -->
-<div class="arrow_wrapper_left">  
-  <div class="arrow_left">    
-    <a href="spot.html">
-        <img src="materiale/up_arrow.png" alt="arrow_RIGHT" height="40" width="40">
-    </a>
-  </div>
-</div>
+	<!-- PPRESENTATION IMAGE & TITLE -->
+    <div align="center" >
+        <img style="width: 100vw" src="materiale/processingCOP.png" alt="presentation img double page">
+    </div>
+    
+    <div align="left" style="margin-top: 30px; margin-bottom: 30px; padding-left:4%">
+        <mah>Javascript art</mah>
+        <h1>Generative images with processing <br>
+        </h1>
+    </div>
+ 
+    <!-- BEGINS TABLE FOR DESKTOP -->
+    
+    <table  width="100%" border="0" cellspacing="20px" cellpadding="10px">
+      <tbody>
+    
+        <tr> 
+            <td class="img_table">
+                <img alt="vortex" src="materiale/vortex.jpg">
+            </td>
+           
+            <td class="text_table">
+			  <p><strong>Processing and javascript</strong></p>
+			  <p>Queste immagini sono state create con il linguaggio di programmazione Javascript. Sono immagini generative e in questo caso la casualità, data dalle funzioni variabili, crea nuove forme e nuovi accostamenti di colore.</p>
+			</td>
+        </tr>
+        
+                <tr> 
+            <td class="img_table">
+                <img alt="book processing" src="materiale/processing_hardcover_showreel.jpg">
+            </td>
+           
+            <td class="text_table">
+			  <p><strong>Processing and javascript</strong></p>
+			  <p>Queste immagini sono state create con il linguaggio di programmazione Javascript. Sono immagini generative e in questo caso la casualità, data dalle funzioni variabili, crea nuove forme e nuovi accostamenti di colore.</p>
+			</td>
+        </tr>
+        
+      </tbody>
+    </table>
 
-<!-- mancano gli altri lavori nel portfolio, da CANCELLARE quando si aggiungo gli altri
-<div class="arrow_wrapper_right">  
-  <div class="arrow_right">
-  
-    <a href="art_javascript.html">
-      <img src="../materiale/up_arrow.png" alt="arrow_RIGHT" height="50" width="50">
-    </a>  
-  </div>
-</div>  
+    <!-- END OF TABLE FOR DESKTOP -->
+    <!-- VIEWPORT SMARTPHONES AND TABLETS FROM 768px -->
+	
+    <div class="portfolio_smartphone_viewport">        <!-- CLASS MAYBE? -->
+        <div class="text_smartphones">            
+            <p><strong>Processing and javascript</strong></p>        
+            <p>Queste immagini sono state create con il linguaggio di programmazione Javascript. Sono immagini generative e in questo caso la casualità, data dalle funzioni variabili, crea nuove forme e nuovi accostamenti di colore.</p>
+                
+        </div>  
+                
+        <div class="img_smartphones">
+			<img alt="vortex" src="materiale/vortex.jpg">
+        </div>
+        
+                <div class="text_smartphones">            
+            <p><strong>Processing and javascript</strong></p>        
+            <p>Queste immagini sono state create con il linguaggio di programmazione Javascript. Sono immagini generative e in questo caso la casualità, data dalle funzioni variabili, crea nuove forme e nuovi accostamenti di colore.</p>
+                
+        </div>  
+                
+        <div class="img_smartphones">
+			<img alt="book processing" src="materiale/processing_hardcover_showreel.jpg">
+        </div>
+            
+    </div>
+	<!-- END OF SMARTPHONES AND TABLET VIEWPORT FROM 768px -->
+    
+    <div class="spazio"></div>
 
--->
+</div>		
 
-	<!--qui cominciano le immagini Rollover-->
-        <div id="myWorks">
-          	<div  align="center"> <img src="materiale/processingCOP.png"></div>
-    	    <div style="margin-top: 30px; margin-bottom: 30px;padding-left:6%"> <mah>Città di nebbia e vortice</mah></div>
-          		</div>
-                <div class="chiWrapper">
-    			<div class="colright"></div>
-	 			 <div class="coleft">
-	 			   <p>&nbsp;</p>
-	 			   <h1>Javascript e le immagini generative</h1>
-                   <p>&nbsp;</p>
-                   <p>Queste immagini sono state create con il linguaggio di programmazione Javascript. Sono immagini generative e in questo caso la casualità, data dalle funzioni variabili, crea nuove forme e  nuovi accostamenti di colore.</p>
-                   <p>&nbsp;</p>
-                   <div class="spazio"></div>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-       <!--    <div class="textarea" align="left"><textarea name="email" cols="40" title="Messaggio" dir="ltr" lang="it">Scrivi la tua mail</textarea><p></p><p><textarea name="Oggetto" cols="40" title="Messaggio" dir="ltr" lang="it">Scrivi qui il messaggio</textarea>
-            </p>
-            <p>&nbsp;</p>
-        </div>--->
-    <div class="BkgWrapper">
-<p style="color:white; font-size:13px; text-align:right; padding-right:30px; margin-bottom:10px;">Creato da Alessia Naglieri ©</p></div>
-</div>
+<p class="footer"><strong>Website by Alessia Naglieri</strong></p>
 </body>
 </html>
