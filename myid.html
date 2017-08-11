@@ -8,102 +8,175 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alessia Naglieri | Graphic Design</title>
+<title>Alessia Naglieri | Graphic Designer</title>
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="css/longpage_new.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" 
       type="image/png" 
       href="materiale/favicon.png">
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script src="respond.min.js"></script>
+
+<!-- Load jQuery using the google CDN service. Let's hope Alphabet never goes bankrupt! ;) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+  $(function () {
+    $(".navMenu").hide();
+
+    $(window).scroll(function () {
+      if($(this).scrollTop() > 100) {
+        $(".navMenu").fadeIn("slow");
+      } else {
+        $(".navMenu").fadeOut();
+      }
+    });
+  });
 </script>
+
+<script src="respond.min.js"></script>
+
 </head>
 <body>
-     <!--- <a style="position: absolute; width: 57px; height: 49px; left: 547px; top: 129px;" href="index.html">Chi sono</a><br>
-      </p>
-</div>    --->
-<div class="gridContainer clearfix">
-  <div id="header">
   
-     <nav>
-    <ul class="buttonMenu"><a href="#" target="_parent" class="active"><img src="materiale/favicon.png" height="60px" style="padding-left:20px; padding-top:5px"></a>
-    <ul>
-        <li><a href="myid.html">Chi Sono</a></li>
-        <li><a href="longpage.html">Portfolio</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
-	</ul>
-    </ul>
-    
-    <ul class="menu">
-        <li><img src="materiale/favicon.png" height="60px" style="padding-left:20px"></li>
-        <li><a href="myid.html">Chi Sono</a></li>
-        <li><a href="longpage.html">Portfolio</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
-    </ul>
-    </nav>
-  </div>
-</div>
-<div class="idContainer">
-<div class="spazio"></div>
-	<div class="chiWrapper">
-    <div class="colright" style="margin-bottom:5%"><img src="materiale/abilities3.png"></div>
-	  <div class="coleft">
-        <h1>Ciao! Mi chiamo Alessia, studio e lavoro nel campo della comunicazione visuale a Roma </h1>
-        <p>&nbsp;</p>
-        <p>Sin da molto giovane mi sono avvicinata al disegno come veicolo di espressione, e ho maturato una grande passione per l’arte e per la fotografia. </p>
-        <p>Dopo aver conseguito il diploma di Pittura ho intrapreso un avvicinamento con le nuove tecnologie, iniziando il corso di Grafica Editoriale presso l’Accademia di Belle Arti di Roma.        </p>
-        <p>La caratteristica che più contraddistingue il mio lavoro è la passione per l'ordine e la precisione.        </p>
-        <p><strong>Il mio obbiettivo in ogni progetto, è riuscire a unire funzionalità e bellezza </strong>
-        </p>
 
-	<div style="margin-bottom:5%; width:100%">
-		<div id="lista">
-		<p><img src="materiale/list_s.png"></p>
-        </div>
-		<div align="left"style="margin-left:20%;">
-        	<p>&nbsp;</p><strong>
-        	Istituto artistico M.Mafai</strong><br>
-        	Diploma conseguito in progettazione pittorica<br>
-    		80/100<p></p>
-    		<strong>
-        	Accademia di Belle Arti di Roma</strong><br>
-			Correntemente frequentando corso di Grafica Editoriale<p></p>
-			<strong>
-        	Escola Massana Centre d’Art i Disseny</strong><br>
-			Borsa di Studio Erasmus Corso di studi Comunicazione 			Visuale
-	    	</div>
-  		</div>
-        <p>&nbsp;</p><p>&nbsp;</p>
+	<!-- Nav-bar on top with the different buttons -->
+	<nav class="navMenu">
+		<!-- Navbar smartphone layout -->
+		<ul class="buttonMenu">
+        	<a href="#" target="_parent" class="active">
+				<img alt="favicon" src="materiale/favicon.png" height="60px" style="padding-left:20px; padding-top:5px;">
+			</a>
+			<ul>  
+				<li><a href="myid.html">Chi Sono</a></li>
+				<li><a href="index.html#container">Portfolio</a></li>
+				<li><a href="contatti.html">Contatti</a></li>
+			</ul>
+		</ul>
+    	
+        <!-- Navbar desktop -->
+        <ul class="menu">
+            <li><img alt="favicon" src="materiale/favicon.png" height="60px" style="padding-left:20px"></li>
+            <li><a href="myid.html">Chi Sono</a></li>
+            <li><a href="index.html#container">Portfolio</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+            <li style="float: right; margin-right: 2vw"><a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/AlexxKnows"></a></li>
+            <li style="float: right;"><a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/alessia-naglieri-61a8a810a/"></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- BEGINS TABLE FOR DESKTOP -->
+    <table  width="100%" border="0" cellspacing="20px" cellpadding="40px" margin-top="20px">
+		<tbody>
+			<tr> 
+				<td class="text_table">
+					<h1>Ciao! Mi chiamo Alessia, studio e lavoro nel campo della comunicazione visuale a Roma </h1>
+                    <p>&nbsp;</p>
+                    <p>Sin da molto giovane mi sono avvicinata al disegno come veicolo di espressione, e ho maturato una grande passione per l’arte e per la fotografia.</p>
+                    <p>Dopo aver conseguito il diploma di Pittura ho intrapreso un avvicinamento con le nuove tecnologie, iniziando il corso di Grafica Editoriale presso l’Accademia di Belle Arti di Roma.</p>
+                    <p>La caratteristica che più contraddistingue il mio lavoro è la passione per l'ordine e la precisione.</p>
+                    <p><strong>Il mio obiettivo in ogni progetto, è riuscire a unire funzionalità e bellezza </strong></p>
+                    <div style="margin-bottom:5%; width:100%">
+                        <div class="lista">
+                            <p><img alt="studi" src="materiale/list_s.png"></p>
+                        </div>
+                        
+                        <div align="left" style="margin-left: 20%">
+                            <br><br>
+                            <strong>Istituto artistico M.Mafai</strong><br>
+                            Diploma conseguito in progettazione pittorica<br>
+                            80/100<p></p>
+                            <strong>
+                            Accademia di Belle Arti di Roma</strong>
+                            <br>
+                            Correntemente frequentando corso di Grafica Editoriale<p></p>
+                            <strong>
+                            Escola Massana Centre d’Art i Disseny</strong><br>
+                            Borsa di Studio Erasmus Corso di studi Comunicazione Visuale
+                        </div>
+                    </div>
+                        <p>&nbsp;</p>
+                        
+                    <div class="lista">
+                        <p><img alt="freelance" src="materiale/list_f.png"></p>
+                    </div>
+                    <br>
+                      
+                    <div align="left" style="margin-left: 20%">
+                        <br>
+                      <strong>Identità corporativa Plein Vie s.r.l.</strong>
+                        <br>Centro estetico e Benessere<br>
+                        Prestazione per SAA s.r.l.<p></p>
+                        <strong>Identità corporativa Efficere.uno s.r.l.</strong>
+                        <br>Società per servizi<br>
+                        Prestazione per SAA s.r.l<br><p></p>
+                    </div>
+                </td>
+                
+                <td class="img_table">
+                    <img alt="brain" src="materiale/abilities3.png">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- END OF TABLE FOR DESKTOP -->
+    <!-- VIEWPORT SMARTPHONES AND TABLETS FROM 768px -->
+	
+    <div class="portfolio_smartphone_viewport">        <!-- CLASS MAYBE? -->
+		<div class="img_smartphones" style="margin-top: 20px; width: 80vw; alignment-adjust:central">
+			<img alt="brain" src="materiale/abilities3.png">
+		</div>
         
-        <div id="lista"><p><img src="materiale/list_f.png"></p>
-		</div><br><br>
-        <div align="left"style="margin-left:20%"><strong>
-        Identità corporativa Plein Vie s.r.l.</strong><br>
-		Centro estetico e Benessere<br>
-		Prestazione per SAA s.r.l.<p></p>
-	    <strong>Identità corporativa Efficere.uno s.r.l.</strong><br>
-		Società per servizi<br>
-		Prestazione per SAA s.r.l<br><p></p>
-  		</div>
-        </div>
-        </div>
-        </div>
-	</div>
-</div>
-</div>
-    <div class="spazio"></div>
-	</div>
-    <div class="BkgWrapper">
-    	<p style="color:white; font-size:13px; text-align:right; padding-right:30px; margin-bottom:10px;">Creato da Alessia Naglieri ©</p>
-</div>
+        <div class="text_smartphones">
+            <h1>Ciao! Mi chiamo Alessia, studio e lavoro nel campo della comunicazione visuale a Roma </h1>
+				<p>&nbsp;</p>
+				<p>Sin da molto giovane mi sono avvicinata al disegno come veicolo di espressione, e ho maturato una grande passione per l’arte e per la fotografia.</p>
+				<p>Dopo aver conseguito il diploma di Pittura ho intrapreso un avvicinamento con le nuove tecnologie, iniziando il corso di Grafica Editoriale presso l’Accademia di Belle Arti di Roma.</p>
+				<p>La caratteristica che più contraddistingue il mio lavoro è la passione per l'ordine e la precisione.</p>
+				<p><strong>Il mio obiettivo in ogni progetto, è riuscire a unire funzionalità e bellezza </strong></p>
+					
+                    <div style="margin-bottom:5%; width:100%">
+						<div class="lista">
+					<p><img alt="studi" src="materiale/list_s.png"></p>
+						</div>
+        
+                        <div align="left" style="margin-left: 20%">
+                            <br><br>
+                            <strong>Istituto artistico M.Mafai</strong><br>
+                            Diploma conseguito in progettazione pittorica<br>
+                            80/100<p></p>
+                            <strong>
+                            Accademia di Belle Arti di Roma</strong>
+                            <br>
+                            Correntemente frequentando corso di Grafica Editoriale<p></p>
+                            <strong>
+                            Escola Massana Centre d’Art i Disseny</strong><br>
+                            Borsa di Studio Erasmus Corso di studi Comunicazione Visuale
+                        </div>
+                	</div>
+                	<p>&nbsp;</p>
+                
+                    <div class="lista">
+                        <p><img alt="freelance" src="materiale/list_f.png"></p>
+                    </div>
+                        <br>
+        
+                    <div align="left" style="margin-left: 20%">
+                        <br>
+                        <strong>Identità corporativa Plein Vie s.r.l.</strong>
+                        <br>Centro estetico e Benessere<br>
+                        Prestazione per SAA s.r.l.<p></p>
+                        <strong>Identità corporativa Efficere.uno s.r.l.</strong>
+                        <br>Società per servizi<br>
+                        Prestazione per SAA s.r.l<br><p></p>
+                    </div>       
+    	</div>
+    </div>
+	<!-- END OF SMARTPHONES AND TABLET VIEWPORT FROM 768px -->
+    
+    <br><br><br> <!-- spazio sopra il footer -->
+    <p class="footer"><strong>Website by Alessia Naglieri</strong></p>
+
 </body>
 </html>
