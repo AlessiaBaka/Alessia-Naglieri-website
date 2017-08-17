@@ -353,6 +353,10 @@ textarea{
 
 /* Layout mobile: 480 px e inferiori. */
 @media only screen and (min-width: 320px) {
+.video-container{
+	width: 100%; 
+	margin-left: 0vw;
+}
 .text{
 	font-size: 20px;
 }
@@ -571,6 +575,10 @@ nav ul.menu li a:hover {
 
 @media only screen and (min-width: 768px) {
 /*VIDEO*/
+.video-container{
+	width: 70vw; 
+	margin-left: 15vw;
+}
 .videoWrapper iframe {
 	position: absolute;
 	top: 0;
