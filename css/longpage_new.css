@@ -765,15 +765,14 @@ textarea{
 }
 
 .text_table{ /* DESKTOP TEXT PORTFOLIO */
-	width: 30%;
+	width: 40%;
 	padding-left: 4%; 
 	display: block;
 	float:left;
 }
 
 .img_table { /* DESKTOP IMAGES PORTFOLIO */
-	width: 50%;	
-	padding-left: 4%; 
+	width: 40%;	
 	display: block;
 	float:left;
 }
