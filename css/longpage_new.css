@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* Contenuto fluido semplice
    Nota: per i contenuti di tipo fluido è necessario rimuovere gli attributi di altezza e larghezza del contenuto dal codice HTML
-   http://www.alistapart.com/articles/fluid-images/ 
+   http://www.alistapart.com/articles/fluid-images/
 */
 img, object, embed, video {
 	border: 0px none #FFF;
@@ -300,7 +300,7 @@ input{
 	width:70px;
 	float:right;
 	margin-right:45%;
-	
+
 }
 input[type=submit] {
 	background-image: none;
@@ -347,7 +347,7 @@ textarea{
 	dw-num-cols-tablet:		8;
 	dw-num-cols-desktop:	10;
 	dw-gutter-percentage:	25;
-	
+
 */
 
 /* Layout mobile: 480 px e inferiori. */
@@ -421,7 +421,7 @@ nav ul.menu {
 	float:left;
 }
 .text_table{ /* 320 PIXEL TEXT PORTFOLIO */
-	display: none; 
+	display: none;
 }
 
 .img_table { /* 320 PIXEL IMG PORTFOLIO */
@@ -431,10 +431,10 @@ nav ul.menu {
 	display: block;
 }
 .text_smartphones{
-	padding: 0 8% 4% 4%;
+	padding: 0 8% 8% 8%;
 }
 .img_smartphones{
-	padding: 0 4% 4% 4%;
+	padding: 0 8% 8% 8%;
 }
 }
 
@@ -511,7 +511,7 @@ nav ul.menu li a:hover {
 }
 #Image4 {
 	max-width:100%;
-	float:left;	
+	float:left;
 }
 #Image5 {
 	max-width:100%;
@@ -543,7 +543,7 @@ nav ul.menu li a:hover {
 	margin-right:45%;
 }
 .text_table{ /* 468 PIXEL TEXT PORTFOLIO */
-	display: none; 
+	display: none;
 }
 
 .img_table { /* 320 PIXEL IMAGES PORTFOLIO */
@@ -553,10 +553,10 @@ nav ul.menu li a:hover {
 	display: block;
 }
 .text_smartphones{
-	padding: 0 8% 4% 4%;
+	padding: 0 8% 4% 8%;
 }
 .img_smartphones{
-	padding: 0 4% 4% 4%;
+	padding: 0 8% 4% 8%;
 }
 
 }
@@ -632,7 +632,7 @@ p {
 }
 #Image4 {
 	max-width:50%;
-	float:left;	
+	float:left;
 }
 #Image5 {
 	max-width:50%;
@@ -666,7 +666,7 @@ input[type=submit] {
 	font-family: Raleway, sans-serif;
 }
 .contenentTxt{
-	width: 90%; 
+	width: 90%;
 	margin-right: 0px;
 	padding-right: 3%;
 	padding-left: 6%;
@@ -765,14 +765,15 @@ textarea{
 }
 
 .text_table{ /* DESKTOP TEXT PORTFOLIO */
-	width: 40%;
-	padding-left: 4%; 
+	width: 30%;
+	padding-left: 4%;
 	display: block;
 	float:left;
 }
 
 .img_table { /* DESKTOP IMAGES PORTFOLIO */
-	width: 40%;	
+	width: 50%;
+	padding-left: 5%;
 	display: block;
 	float:left;
 }
@@ -782,4 +783,3 @@ textarea{
 
 }
 }
-
